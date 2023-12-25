@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Mulish';
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    color: #B52184;
+}
+
+p {
+    color: #312D64;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 68rem;
+}
+
+.introduction div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.7rem;
+    margin-bottom: 3.5rem;
+    justify-content: center;
+}
+
+.introduction div h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+.introduction div p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.introduction img {
+    margin-right: 3rem;
+}
+
+.introduction img:nth-child(2) {
+    width: 72rem;
+}
+
+.astronaut {
+    width: 36.4rem;
+}
+
+.midlane {
+    display: flex;
+    flex-direction: column;
+    background: #312D64;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    padding: 4rem;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    background: white;
+    border: none;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.card img {
+    max-width: 8rem;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.card h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.card p {
+    font-size: 1.6rem;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact h2 {
+    font-size: 3.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 2rem;
+}
+
+form label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+form input {
+    border-radius: 1.6rem;
+    border: 2px solid #312D64;
+    padding: 1.6rem;
+    width: 100%;
+}
+
+form input::placeholder {
+    font-size: 1.6rem;
+    color: #312D64;
+    font-weight: 600;
+}
+
+form input:nth-child(5) {
+    height: 12.5rem;
+}
+
+form input:nth-child(6) {
+    background: #343193;
+    color: white;
+    font-size: 1.4rem;
+    width: 15rem;
+    border-radius: 1.6rem;
+    padding: 1.4rem 1.6rem;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    background: #343193;
+    padding: 3.2rem 1.6rem;
+}
+
+footer p {
+    color: white;
+    font-size: 2rem;
+}
+
+/* -------------- */
+
+@media (max-width: 430px) {
+    .introduction img:nth-child(2) {
+        width: 36.4rem;
+    }    
+}
+
+@media (min-width: 1440px) {
+    .introduction {
+        flex-direction: row-reverse;
+    }
+
+    .introduction div {
+        gap: .8rem;
+    }
+
+    .introduction div h1 {
+        font-size: 6rem;
+    }
+
+    .introduction div p {
+        font-size: 3.2rem;
+    }
+
+    .midlane {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 36rem;
+    }
+
+    .contact {
+        background-image: url(./assets/stars.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        margin-bottom: -8rem;
+        margin-top: -8rem;
+    }
+
+    form {
+        margin: 10rem;
+        max-width: 60rem;
+    }
+}
